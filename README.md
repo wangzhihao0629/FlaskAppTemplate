@@ -14,14 +14,22 @@ cd FlaskAppTemplate
 
 mv FLASK_APP_NAME [YOUR_FLASK_APP_NAME]
 
-vim runserver.py 
+vim runserver.py
 
 # edit flaks app name
 # FLASK_APP_NAME.app -> [YOUR_FLASK_APP_NAME]
-
 ```
 
-### Step3: Run
+### Step3: Create isolated Python environment
+```
+virtualenv venv
+
+source venv/bin/activate
+
+make pip
+```
+
+### Step4: Run
 ```
 python runserver.py
 ```
